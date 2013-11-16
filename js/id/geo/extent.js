@@ -1,4 +1,5 @@
 require ('../geo.js');
+var _ = require ('underscore');
 
 iD.geo.Extent = function geoExtent(min, max) {
     if (!(this instanceof iD.geo.Extent)) return new iD.geo.Extent(min, max);

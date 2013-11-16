@@ -1,7 +1,7 @@
 // A per-domain session mutex backed by a cookie and dead man's
 // switch. If the session crashes, the mutex will auto-release
 // after 5 seconds.
-
+require ('../util.js');
 iD.util.SessionMutex = function(name) {
     var mutex = {},
         intervalID;

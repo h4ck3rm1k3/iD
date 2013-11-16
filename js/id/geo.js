@@ -1,3 +1,5 @@
+require ('./id.js');
+
 iD.geo = {};
 
 iD.geo.roundCoords = function(c) {

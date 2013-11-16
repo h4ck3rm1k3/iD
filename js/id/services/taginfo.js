@@ -1,3 +1,5 @@
+require ('../id.js');
+
 iD.taginfo = function() {
     var taginfo = {},
         endpoint = 'http://taginfo.openstreetmap.org/api/4/',

@@ -1,3 +1,4 @@
+require ('./id.js');
 iD.util = {};
 
 iD.util.tagText = function(entity) {

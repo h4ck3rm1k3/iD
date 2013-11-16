@@ -1,3 +1,5 @@
+require ('../geo.js');
+
 iD.geo.Extent = function geoExtent(min, max) {
     if (!(this instanceof iD.geo.Extent)) return new iD.geo.Extent(min, max);
     if (min instanceof iD.geo.Extent) {

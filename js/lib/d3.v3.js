@@ -1,3 +1,4 @@
+
 d3 = (function(){
   var d3 = {version: "3.3.8"}; // semver
 d3.ascending = function(a, b) {
@@ -424,20 +425,6 @@ d3.behavior = {};
 var d3_arraySlice = [].slice,
     d3_array = function(list) { return d3_arraySlice.call(list); }; // conversion for NodeLists
 
-var d3_document = document,
-    d3_documentElement = d3_document.documentElement,
-    d3_window = window;
-
-// Redefine d3_array if the browser doesn’t support slice-based conversion.
-try {
-  d3_array(d3_documentElement.childNodes)[0].nodeType;
-} catch(e) {
-  d3_array = function(list) {
-    var i = list.length, array = new Array(i);
-    while (i--) array[i] = list[i];
-    return array;
-  };
-}
 // Copies a variable number of methods from source to target.
 d3.rebind = function(target, source) {
   var i = 1, n = arguments.length, method;
@@ -610,17 +597,6 @@ function d3_selection(groups) {
   return groups;
 }
 
-var d3_select = function(s, n) { return n.querySelector(s); },
-    d3_selectAll = function(s, n) { return n.querySelectorAll(s); },
-    d3_selectMatcher = d3_documentElement[d3_vendorSymbol(d3_documentElement, "matchesSelector")],
-    d3_selectMatches = function(n, s) { return d3_selectMatcher.call(n, s); };
-
-// Prefer Sizzle, if available.
-if (typeof Sizzle === "function") {
-  d3_select = function(s, n) { return Sizzle(s, n)[0] || null; };
-  d3_selectAll = function(s, n) { return Sizzle.uniqueSort(Sizzle(s, n)); };
-  d3_selectMatches = Sizzle.matchesSelector;
-}
 
 d3.selection = function() {
   return d3_selectionRoot;
@@ -1302,7 +1278,6 @@ d3.selectAll = function(nodes) {
   return d3_selection([group]);
 };
 
-var d3_selectionRoot = d3.select(d3_documentElement);
 
 d3_selectionPrototype.on = function(type, listener, capture) {
   var n = arguments.length;
@@ -1370,14 +1345,6 @@ function d3_selection_on(type, listener, capture) {
       : listener ? d3_noop : removeAll;
 }
 
-var d3_selection_onFilters = d3.map({
-  mouseenter: "mouseover",
-  mouseleave: "mouseout"
-});
-
-d3_selection_onFilters.forEach(function(k) {
-  if ("on" + k in d3_document) d3_selection_onFilters.remove(k);
-});
 
 function d3_selection_onListener(listener, argumentz) {
   return function(e) {
@@ -1402,8 +1369,6 @@ function d3_selection_onFilter(listener, argumentz) {
   };
 }
 
-var d3_event_dragSelect = d3_vendorSymbol(d3_documentElement.style, "userSelect"),
-    d3_event_dragId = 0;
 
 function d3_event_dragSuppress() {
   var name = ".dragsuppress-" + ++d3_event_dragId,
@@ -1430,8 +1395,6 @@ d3.mouse = function(container) {
   return d3_mousePoint(container, d3_eventSource());
 };
 
-// https://bugs.webkit.org/show_bug.cgi?id=44083
-var d3_mouse_bug44083 = /WebKit/.test(d3_window.navigator.userAgent) ? -1 : 0;
 
 function d3_mousePoint(container, e) {
   if (e.changedTouches) e = e.changedTouches[0];
@@ -1856,25 +1819,13 @@ d3.behavior.zoom = function() {
   return d3.rebind(zoom, event, "on");
 };
 
-var d3_behavior_zoomInfinity = [0, Infinity]; // default scale extent
 
-// https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/wheel
-var d3_behavior_zoomDelta, d3_behavior_zoomWheel
-    = "onwheel" in d3_document ? (d3_behavior_zoomDelta = function() { return -d3.event.deltaY * (d3.event.deltaMode ? 120 : 1); }, "wheel")
-    : "onmousewheel" in d3_document ? (d3_behavior_zoomDelta = function() { return d3.event.wheelDelta; }, "mousewheel")
-    : (d3_behavior_zoomDelta = function() { return -d3.event.detail; }, "MozMousePixelScroll");
 function d3_functor(v) {
   return typeof v === "function" ? v : function() { return v; };
 }
 
 d3.functor = d3_functor;
 
-var d3_timer_queueHead,
-    d3_timer_queueTail,
-    d3_timer_interval, // is an interval (or frame) active?
-    d3_timer_timeout, // is a timeout active?
-    d3_timer_active, // active timer object
-    d3_timer_frame = d3_window[d3_vendorSymbol(d3_window, "requestAnimationFrame")] || function(callback) { setTimeout(callback, 17); };
 
 // The timer will continue to fire until callback returns true.
 d3.timer = function(callback, delay, then) {
@@ -5740,3 +5691,79 @@ d3.xml = d3_xhrType(function(request) {
 });
   return d3;
 })();
+
+
+
+
+function get_fuctions(groups) {
+
+    var d3_select = function(s, n) { return n.querySelector(s); },
+    d3_selectAll = function(s, n) { return n.querySelectorAll(s); },
+    d3_selectMatcher = d3_documentElement[d3_vendorSymbol(d3_documentElement, "matchesSelector")],
+    d3_selectMatches = function(n, s) { return d3_selectMatcher.call(n, s); };
+    
+    // Prefer Sizzle, if available.
+    if (typeof Sizzle === "function") {
+        d3_select = function(s, n) { return Sizzle(s, n)[0] || null; };
+        d3_selectAll = function(s, n) { return Sizzle.uniqueSort(Sizzle(s, n)); };
+        d3_selectMatches = Sizzle.matchesSelector;
+    }
+}
+function get_selection_root(){
+    var d3_selectionRoot = d3.select(d3_documentElement);
+}
+
+
+function get_document() {
+    // TODO
+    var d3_document = document,
+    d3_documentElement = d3_document.documentElement,
+    d3_window = window;
+
+    // Redefine d3_array if the browser doesn’t support slice-based conversion.
+    try {
+        d3_array(d3_documentElement.childNodes)[0].nodeType;
+    } catch(e) {
+        d3_array = function(list) {
+            var i = list.length, array = new Array(i);
+            while (i--) array[i] = list[i];
+            return array;
+        };
+    }
+}
+
+function remove_items() {
+    var d3_selection_onFilters = d3.map({
+        mouseenter: "mouseover",
+        mouseleave: "mouseout"
+    });
+
+    d3_selection_onFilters.forEach(function(k) {
+        if ("on" + k in d3_document) d3_selection_onFilters.remove(k);
+    });
+}
+
+function with_document() {
+var d3_event_dragSelect = d3_vendorSymbol(d3_documentElement.style, "userSelect"),
+    d3_event_dragId = 0;
+
+// https://bugs.webkit.org/show_bug.cgi?id=44083
+var d3_mouse_bug44083 = /WebKit/.test(d3_window.navigator.userAgent) ? -1 : 0;
+
+var d3_behavior_zoomInfinity = [0, Infinity]; // default scale extent
+
+// https://developer.mozilla.org/en-US/docs/Mozilla_event_reference/wheel
+var d3_behavior_zoomDelta, d3_behavior_zoomWheel
+    = "onwheel" in d3_document ? (d3_behavior_zoomDelta = function() { return -d3.event.deltaY * (d3.event.deltaMode ? 120 : 1); }, "wheel")
+    : "onmousewheel" in d3_document ? (d3_behavior_zoomDelta = function() { return d3.event.wheelDelta; }, "mousewheel")
+    : (d3_behavior_zoomDelta = function() { return -d3.event.detail; }, "MozMousePixelScroll");
+
+
+var d3_timer_queueHead,
+    d3_timer_queueTail,
+    d3_timer_interval, // is an interval (or frame) active?
+    d3_timer_timeout, // is a timeout active?
+    d3_timer_active, // active timer object
+    d3_timer_frame = d3_window[d3_vendorSymbol(d3_window, "requestAnimationFrame")] || function(callback) { setTimeout(callback, 17); };
+
+}

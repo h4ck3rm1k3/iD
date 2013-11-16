@@ -1,5 +1,55 @@
 # See the README for installation instructions.
 
+compile :
+	node js/lib/bootstrap-tooltip.js 
+	node js/lib/jxon.js 
+	node js/lib/lodash.js 
+	node js/lib/osmauth.js 
+	node js/lib/rbush.js 
+	node js/lib/togeojson.js 
+	node js/lib/marked.js 
+	node js/id/start.js 
+	node js/id/id.js 
+	node js/id/services/*.js 
+	node js/id/util.js 
+	node js/id/util/suggest_names.js
+	node js/id/util/session_mutex.js
+	node js/id/geo.js 
+	node js/id/geo/*.js 
+	node js/id/actions.js 
+	node js/id/actions/*.js 
+	node js/id/behavior.js 
+	node js/id/behavior/*.js 
+	node js/id/modes.js 
+	node js/id/modes/*.js 
+	node js/id/operations.js 
+	node js/id/operations/*.js 
+	node js/id/core/*.js 
+	node js/id/renderer/*.js 
+	node js/id/svg.js 
+	node js/id/svg/*.js 
+	node js/id/ui.js 
+	node js/id/ui/*.js 
+	node js/id/ui/preset/*.js 
+	node js/id/ui/intro/*.js 
+	node js/id/presets.js 
+	node js/id/presets/*.js 
+	node js/id/validate.js 
+	node js/id/end.js 
+	node js/lib/locale.js 
+	node data/introGraph.js
+	node js/lib/d3.v3.js 
+	node js/lib/d3.combobox.js 
+	node 	js/lib/d3.geo.tile.js 
+	node	js/lib/d3.jsonp.js 
+	node	js/lib/d3.keybinding.js 
+	node 	js/lib/d3.one.js 
+	node	js/lib/d3.dimensions.js 
+	node	js/lib/d3.trigger.js 
+	node	js/lib/d3.typeahead.js 
+	node	js/lib/d3.curtain.js 
+	node js/lib/d3.value.js 
+
 all: \
 	dist/iD.css \
 	dist/iD.js \

@@ -1,3 +1,4 @@
+require ('../util.js');
 iD.util.SuggestNames = function(preset, suggestions) {
     preset = preset.id.split('/', 2);
     var k = preset[0],

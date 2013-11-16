@@ -1,3 +1,6 @@
+
+require("../lib/window.js");
+
 window.iD = function () {
     window.locale.en = iD.data.en;
     window.locale.current('en');
@@ -309,6 +312,8 @@ window.iD = function () {
 
     return d3.rebind(context, dispatch, 'on');
 };
+
+iD=window.iD
 
 iD.version = '1.3.2';
 

@@ -1,3 +1,4 @@
+require('./d3.v3.js');
 d3.jsonp = function (url, callback) {
   function rand() {
     var chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz',

@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Help = function(context) {
     var key = 'h';
 

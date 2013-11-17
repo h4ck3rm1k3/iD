@@ -1,3 +1,4 @@
+require ('../intro.js');
 iD.ui.intro.navigation = function(context, reveal) {
 
     var event = d3.dispatch('done'),

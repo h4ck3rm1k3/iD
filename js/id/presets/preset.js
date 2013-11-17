@@ -1,3 +1,4 @@
+require('../presets.js')
 iD.presets.Preset = function(id, preset, fields) {
     preset = _.clone(preset);
 

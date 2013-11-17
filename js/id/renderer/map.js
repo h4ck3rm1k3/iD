@@ -1,3 +1,4 @@
+require('../id.js')
 iD.Map = function(context) {
     var dimensions = [1, 1],
         dispatch = d3.dispatch('move', 'drawn'),

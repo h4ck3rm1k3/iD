@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.preset = function(context) {
     var event = d3.dispatch('change'),
         state,

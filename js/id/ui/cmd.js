@@ -1,3 +1,4 @@
+require ('../ui.js');
 // Translate a MacOS key command into the appropriate Windows/Linux equivalent.
 // For example, ⌘Z -> Ctrl+Z
 iD.ui.cmd = function(code) {

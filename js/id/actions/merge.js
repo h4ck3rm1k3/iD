@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.Merge = function(ids) {
     function groupEntitiesByGeometry(graph) {
         var entities = ids.map(function(id) { return graph.entity(id); });

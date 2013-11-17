@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Reverse = function(selectedIDs, context) {
     var entityId = selectedIDs[0];
 

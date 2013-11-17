@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Surface = function(context) {
     function autosize(image) {
         var img = document.createElement('img');

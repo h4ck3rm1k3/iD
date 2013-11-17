@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.DeleteMultiple = function(ids) {
     var actions = {
         way: iD.actions.DeleteWay,

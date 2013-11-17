@@ -1,3 +1,4 @@
+require('../id.js')
 iD.GpxLayer = function(context) {
     var projection,
         gj = {},

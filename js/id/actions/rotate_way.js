@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.RotateWay = function(wayId, pivot, angle, projection) {
     return function(graph) {
         return graph.update(function(graph) {

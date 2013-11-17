@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.ViewOnOSM = function(context) {
     var id;
 

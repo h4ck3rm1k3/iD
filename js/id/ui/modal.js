@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.modal = function(selection, blocking) {
 
     var previous = selection.select('div.modal');

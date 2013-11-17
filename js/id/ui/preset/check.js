@@ -1,3 +1,4 @@
+require ('../preset.js');
 iD.ui.preset.check = function(field) {
     var event = d3.dispatch('change'),
         values = [undefined, 'yes', 'no'],

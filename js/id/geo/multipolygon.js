@@ -1,3 +1,5 @@
+require('../geo.js')
+
 // For fixing up rendering of multipolygons with tags on the outer member.
 // https://github.com/systemed/iD/issues/613
 iD.geo.isSimpleMultipolygonOuterMember = function(entity, graph) {

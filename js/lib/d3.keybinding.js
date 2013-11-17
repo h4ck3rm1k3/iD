@@ -1,3 +1,4 @@
+require('./d3.v3.js');
 /*
  * This code is licensed under the MIT license.
  *

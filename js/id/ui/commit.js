@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Commit = function(context) {
     var event = d3.dispatch('cancel', 'save');
 

@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Areas = function(projection) {
     // Patterns only work in Firefox when set directly on element.
     // (This is not a bug: https://bugzilla.mozilla.org/show_bug.cgi?id=750632)

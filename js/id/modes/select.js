@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.Select = function(context, selectedIDs) {
     var mode = {
         id: 'select',

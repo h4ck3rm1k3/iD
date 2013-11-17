@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.DeprecateTags = function(entityId) {
     return function(graph) {
         var entity = graph.entity(entityId),

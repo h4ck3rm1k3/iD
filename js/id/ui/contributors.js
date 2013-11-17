@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Contributors = function(context) {
     function update(selection) {
         var users = {},

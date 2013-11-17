@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Zoom = function(context) {
     var zooms = [{
         id: 'zoom-in',

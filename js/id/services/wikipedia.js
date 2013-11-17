@@ -1,3 +1,4 @@
+require ('../id.js');
 iD.wikipedia  = function() {
     var wiki = {},
         endpoint = 'http://en.wikipedia.org/w/api.php?';

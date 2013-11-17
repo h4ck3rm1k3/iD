@@ -1,3 +1,4 @@
+require ('../actions.js');
 // Join ways at the end node they share.
 //
 // This is the inverse of `iD.actions.Split`.

@@ -1,3 +1,4 @@
+require('../presets.js')
 iD.presets.Category = function(id, category, all) {
     category = _.clone(category);
 

@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.Move = function(context, entityIDs) {
     var mode = {
         id: 'move',

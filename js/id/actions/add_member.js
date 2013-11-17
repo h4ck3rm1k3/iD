@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.AddMember = function(relationId, member, memberIndex) {
     return function(graph) {
         var relation = graph.entity(relationId);

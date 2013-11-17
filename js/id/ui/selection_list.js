@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.SelectionList = function(context, selectedIDs) {
 
     function selectionList(selection) {

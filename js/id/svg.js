@@ -1,3 +1,4 @@
+require('./id.js')
 iD.svg = {
     RoundProjection: function(projection) {
         return function(d) {

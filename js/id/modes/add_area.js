@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.AddArea = function(context) {
     var mode = {
         id: 'add-area',

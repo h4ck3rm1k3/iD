@@ -1,3 +1,4 @@
+require('../id.js')
 iD.Background = function(context) {
     var dispatch = d3.dispatch('change'),
         baseLayer = iD.TileLayer()

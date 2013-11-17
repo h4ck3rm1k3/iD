@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Orthogonalize = function(selectedIDs, context) {
     var entityId = selectedIDs[0],
         geometry = context.geometry(entityId),

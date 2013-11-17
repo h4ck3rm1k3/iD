@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.Save = function(context) {
     var ui = iD.ui.Commit(context)
         .on('cancel', cancel)

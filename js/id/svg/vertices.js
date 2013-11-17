@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Vertices = function(projection, context) {
     var radiuses = {
         //       z16-, z17, z18+, tagged

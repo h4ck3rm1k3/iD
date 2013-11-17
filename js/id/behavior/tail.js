@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.Tail = function() {
     var text,
         container,

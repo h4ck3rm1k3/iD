@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.Browse = function(context) {
     var mode = {
         button: 'browse',

@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.PresetIcon = function() {
     var preset, geometry;
 

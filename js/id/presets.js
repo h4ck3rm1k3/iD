@@ -1,3 +1,4 @@
+require('./id.js')
 iD.presets = function() {
 
     // an iD.presets.Collection with methods for

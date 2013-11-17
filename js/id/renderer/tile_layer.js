@@ -1,3 +1,4 @@
+require('../id.js')
 iD.TileLayer = function() {
     var tileSize = 256,
         tile = d3.geo.tile(),

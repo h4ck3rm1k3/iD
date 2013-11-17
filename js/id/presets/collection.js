@@ -1,3 +1,4 @@
+require('../presets.js')
 iD.presets.Collection = function(collection) {
 
     var presets = {

@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.UndoRedo = function(context) {
     var commands = [{
         id: 'undo',

@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Restrictions = function(context) {
     var projection = context.projection;
 

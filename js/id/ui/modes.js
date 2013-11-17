@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Modes = function(context) {
     var modes = [
         iD.modes.AddPoint(context),

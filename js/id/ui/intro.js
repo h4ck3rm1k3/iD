@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.intro = function(context) {
 
     var step;

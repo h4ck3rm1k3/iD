@@ -1,3 +1,4 @@
+require ('../preset.js');
 iD.ui.preset.radio = function(field) {
 
     var event = d3.dispatch('change'),

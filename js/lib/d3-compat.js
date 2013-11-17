@@ -1,3 +1,5 @@
+require('./d3.v3.js');
+
 (function() {
 
   // get a reference to the d3.selection prototype,

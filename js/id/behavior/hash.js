@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.Hash = function(context) {
     var s0 = null, // cached location.hash
         lat = 90 - 1e-8; // allowable latitude range

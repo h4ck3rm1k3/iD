@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.DrawLine = function(context, wayId, baseGraph, affix) {
     var mode = {
         button: 'line',

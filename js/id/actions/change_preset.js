@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.ChangePreset = function(entityId, oldPreset, newPreset) {
     return function(graph) {
         var entity = graph.entity(entityId),

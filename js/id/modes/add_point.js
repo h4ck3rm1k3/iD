@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.AddPoint = function(context) {
     var mode = {
         id: 'add-point',

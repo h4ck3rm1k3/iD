@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Notice = function(context) {
     return function(selection) {
         var div = selection.append('div')

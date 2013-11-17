@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Loading = function(context) {
     var message = '',
         blocking = false,

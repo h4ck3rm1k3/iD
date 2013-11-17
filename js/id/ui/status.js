@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Status = function(context) {
     var connection = context.connection(),
         errCount = 0;

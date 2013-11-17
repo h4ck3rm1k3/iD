@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Move = function(selectedIDs, context) {
     var operation = function() {
         context.enter(iD.modes.Move(context, selectedIDs));

@@ -1,3 +1,4 @@
+require ('../actions.js');
 // Disconect the ways at the given node.
 //
 // Optionally, disconnect only the given ways.

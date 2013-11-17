@@ -1,3 +1,4 @@
+require ('../actions.js');
 /*
   Order the nodes of a way in reverse order and reverse any direction dependent tags
   other than `oneway`. (We assume that correcting a backwards oneway is the primary

@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.EntityEditor = function(context) {
     var event = d3.dispatch('choose'),
         state = 'select',

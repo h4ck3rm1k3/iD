@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Account = function(context) {
     var connection = context.connection();
 

@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Labels = function(projection, context) {
     var path = d3.geo.path().projection(projection);
 

@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.AddMidpoint = function(midpoint, node) {
     return function(graph) {
         graph = graph.replace(node.move(midpoint.loc));

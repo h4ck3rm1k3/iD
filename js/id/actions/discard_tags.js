@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.DiscardTags = function(difference) {
     return function(graph) {
         function discardTags(entity) {

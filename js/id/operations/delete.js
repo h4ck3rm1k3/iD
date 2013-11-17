@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Delete = function(selectedIDs, context) {
     var action = iD.actions.DeleteMultiple(selectedIDs);
 

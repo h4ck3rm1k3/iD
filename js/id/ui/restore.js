@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Restore = function(context) {
     return function(selection) {
         if (!context.history().lock() || !context.history().restorableChanges())

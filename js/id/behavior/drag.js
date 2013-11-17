@@ -1,3 +1,4 @@
+require ('../behavior.js');
 /*
     `iD.behavior.drag` is like `d3.behavior.drag`, with the following differences:
 

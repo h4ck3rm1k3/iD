@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Points = function(projection, context) {
     function markerPath(selection, klass) {
         selection

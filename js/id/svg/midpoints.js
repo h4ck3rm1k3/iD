@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Midpoints = function(projection, context) {
     return function drawMidpoints(surface, graph, entities, filter, extent) {
         var midpoints = {};

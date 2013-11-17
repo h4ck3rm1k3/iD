@@ -1,3 +1,4 @@
+require('./id.js')
 iD.ui = function(context) {
     function render(container) {
         var map = context.map();

@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.DragNode = function(context) {
     var mode = {
         id: 'drag-node',

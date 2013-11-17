@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Merge = function(selectedIDs, context) {
     var join = iD.actions.Join(selectedIDs),
         merge = iD.actions.Merge(selectedIDs),

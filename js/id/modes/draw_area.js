@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.DrawArea = function(context, wayId, baseGraph) {
     var mode = {
         button: 'area',

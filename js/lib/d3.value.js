@@ -1,3 +1,4 @@
+require('./d3.v3.js');
 // Like selection.property('value', ...), but avoids no-op value sets,
 // which can result in layout/repaint thrashing in some situations.
 d3.selection.prototype.value = function(value) {

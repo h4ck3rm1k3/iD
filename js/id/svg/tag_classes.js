@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.TagClasses = function() {
     var primary = [
             'highway', 'railway', 'waterway', 'aeroway', 'motorway',

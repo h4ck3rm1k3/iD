@@ -1,3 +1,4 @@
+require('./d3.v3.js');
 d3.combobox = function() {
     var event = d3.dispatch('accept'),
         data = [],

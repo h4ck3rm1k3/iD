@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.Circularize = function(wayId, projection, maxAngle) {
     maxAngle = (maxAngle || 20) * Math.PI / 180;
 

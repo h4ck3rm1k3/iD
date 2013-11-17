@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.AddWay = function(context) {
     var event = d3.dispatch('start', 'startFromWay', 'startFromNode'),
         draw = iD.behavior.Draw(context);

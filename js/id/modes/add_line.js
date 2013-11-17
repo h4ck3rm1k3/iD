@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.AddLine = function(context) {
     var mode = {
         id: 'add-line',

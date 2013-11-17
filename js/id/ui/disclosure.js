@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Disclosure = function() {
     var dispatch = d3.dispatch('toggled'),
         title,

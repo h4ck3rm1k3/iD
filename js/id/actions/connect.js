@@ -1,3 +1,4 @@
+require ('../actions.js');
 // Connect the ways at the given nodes.
 //
 // The last node will survive. All other nodes will be replaced with

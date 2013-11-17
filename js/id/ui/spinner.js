@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Spinner = function(context) {
     var connection = context.connection();
 

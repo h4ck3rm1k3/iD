@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.confirm = function(selection) {
     var modal = iD.ui.modal(selection);
 

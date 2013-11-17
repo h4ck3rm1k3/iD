@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.Draw = function(context) {
     var event = d3.dispatch('move', 'click', 'clickWay',
         'clickNode', 'undo', 'cancel', 'finish'),

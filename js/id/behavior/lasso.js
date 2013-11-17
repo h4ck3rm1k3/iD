@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.Lasso = function(context) {
 
     var behavior = function(selection) {

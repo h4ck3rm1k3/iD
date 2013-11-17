@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.SourceSwitch = function(context) {
     var keys;
 

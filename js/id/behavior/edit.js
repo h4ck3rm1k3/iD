@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.Edit = function(context) {
     function edit() {
         context.map()

@@ -1,3 +1,4 @@
+require ('../preset.js');
 iD.ui.preset.wikipedia = function(field, context) {
 
     var event = d3.dispatch('change'),

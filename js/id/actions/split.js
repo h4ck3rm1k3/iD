@@ -1,3 +1,4 @@
+require ('../actions.js');
 // Split a way at the given node.
 //
 // Optionally, split only the given ways, if multiple ways share

@@ -1,3 +1,4 @@
+require ('../actions.js');
 // https://github.com/openstreetmap/potlatch2/blob/master/net/systemeD/halcyon/connection/actions/AddNodeToWayAction.as
 iD.actions.AddVertex = function(wayId, nodeId, index) {
     return function(graph) {

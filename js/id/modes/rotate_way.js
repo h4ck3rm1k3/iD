@@ -1,3 +1,4 @@
+require('../modes.js')
 iD.modes.RotateWay = function(context, wayId) {
     var mode = {
         id: 'rotate-way',

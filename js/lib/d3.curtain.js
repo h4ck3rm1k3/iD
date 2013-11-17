@@ -1,3 +1,4 @@
+require('./d3.v3.js');
 // Tooltips and svg mask used to highlight certain features
 d3.curtain = function() {
 

@@ -1,3 +1,4 @@
+require('../id.js')
 iD.BackgroundSource = function(data) {
     var source = _.clone(data),
         offset = [0, 0],

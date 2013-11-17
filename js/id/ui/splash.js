@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Splash = function(context) {
     return function(selection) {
         if (context.storage('sawSplash'))

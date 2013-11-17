@@ -1,3 +1,4 @@
+require ('../actions.js');
 iD.actions.MergePolygon = function(ids, newRelationId) {
 
     function groupEntities(graph) {

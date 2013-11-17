@@ -1,3 +1,4 @@
+require ('../id.js');
 iD.Tree = function(head) {
     var rtree = rbush(),
         rectangles = {};

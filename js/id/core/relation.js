@@ -1,3 +1,6 @@
+require ('./entity.js');
+_=require ('underscore');
+
 iD.Relation = iD.Entity.relation = function iD_Relation() {
     if (!(this instanceof iD_Relation)) {
         return (new iD_Relation()).initialize(arguments);

@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.RawTagEditor = function(context) {
     var event = d3.dispatch('change'),
         taginfo = iD.taginfo(),

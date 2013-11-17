@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Inspector = function(context) {
     var presetList = iD.ui.PresetList(context),
         entityEditor = iD.ui.EntityEditor(context),

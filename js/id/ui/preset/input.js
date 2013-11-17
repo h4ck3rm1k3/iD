@@ -1,3 +1,4 @@
+require ('../preset.js');
 iD.ui.preset.text =
 iD.ui.preset.number =
 iD.ui.preset.tel =

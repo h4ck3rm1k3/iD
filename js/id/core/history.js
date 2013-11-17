@@ -1,3 +1,4 @@
+require ('../id.js');
 iD.History = function(context) {
     var stack, index, tree,
         imageryUsed = ['Bing'],

@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Background = function(context) {
     var key = 'b',
         opacities = [1, 0.75, 0.5, 0.25],

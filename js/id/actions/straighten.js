@@ -1,3 +1,4 @@
+require ('../actions.js');
 /*
  * Based on https://github.com/openstreetmap/potlatch2/net/systemeD/potlatch2/tools/Straighten.as
  */

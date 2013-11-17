@@ -1,3 +1,4 @@
+require('./d3.v3.js');
 d3.geo.tile = function() {
   var size = [960, 500],
       scale = 256,

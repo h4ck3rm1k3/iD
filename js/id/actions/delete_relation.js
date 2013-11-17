@@ -1,3 +1,4 @@
+require ('../actions.js');
 // https://github.com/openstreetmap/potlatch2/blob/master/net/systemeD/halcyon/connection/actions/DeleteRelationAction.as
 iD.actions.DeleteRelation = function(relationId) {
     function deleteEntity(entity, graph) {

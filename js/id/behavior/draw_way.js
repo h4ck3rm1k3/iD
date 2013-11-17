@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.DrawWay = function(context, wayId, index, mode, baseGraph) {
     var way = context.entity(wayId),
         isArea = context.geometry(wayId) === 'area',

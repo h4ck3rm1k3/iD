@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.RadialMenu = function(context, operations) {
     var menu,
         center = [0, 0],

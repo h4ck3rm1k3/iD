@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Geolocate = function(map) {
     function click() {
         navigator.geolocation.getCurrentPosition(

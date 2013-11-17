@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.flash = function(selection) {
     var modal = iD.ui.modal(selection);
 

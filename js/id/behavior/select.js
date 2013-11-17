@@ -1,3 +1,4 @@
+require ('../behavior.js');
 iD.behavior.Select = function(context) {
     function keydown() {
         if (d3.event && d3.event.shiftKey) {

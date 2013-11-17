@@ -1,3 +1,4 @@
+require ('../id.js');
 iD.Graph = function(other, mutable) {
     if (!(this instanceof iD.Graph)) return new iD.Graph(other, mutable);
 

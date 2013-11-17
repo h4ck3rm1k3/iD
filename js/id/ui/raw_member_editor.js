@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.RawMemberEditor = function(context) {
     var id;
 

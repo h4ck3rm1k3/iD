@@ -1,3 +1,4 @@
+require('../geo.js')
 iD.geo.turns = function(graph, entityID) {
     var way = graph.entity(entityID);
     if (way.type !== 'way' || !way.tags.highway || way.isArea())

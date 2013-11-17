@@ -1,3 +1,6 @@
+require ('./entity.js');
+_=require ('underscore');
+
 iD.Node = iD.Entity.node = function iD_Node() {
     if (!(this instanceof iD_Node)) {
         return (new iD_Node()).initialize(arguments);

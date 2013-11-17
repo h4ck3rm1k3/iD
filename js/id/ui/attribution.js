@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Attribution = function(context) {
     var selection;
 

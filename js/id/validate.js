@@ -1,3 +1,4 @@
+require('./id.js')
 iD.validate = function(changes, graph) {
     var warnings = [];
 

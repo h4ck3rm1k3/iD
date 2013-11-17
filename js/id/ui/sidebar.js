@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Sidebar = function(context) {
     var inspector = iD.ui.Inspector(context),
         current;

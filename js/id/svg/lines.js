@@ -1,3 +1,4 @@
+require ('../svg.js');
 iD.svg.Lines = function(projection) {
 
     var highway_stack = {

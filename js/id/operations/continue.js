@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Continue = function(selectedIDs, context) {
     var graph = context.graph(),
         entities = selectedIDs.map(function(id) { return graph.entity(id); }),

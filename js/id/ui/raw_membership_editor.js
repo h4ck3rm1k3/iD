@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.RawMembershipEditor = function(context) {
     var id, showBlank;
 

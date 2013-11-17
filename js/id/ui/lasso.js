@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.Lasso = function(context) {
 
     var box, group,

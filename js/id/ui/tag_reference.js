@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.TagReference = function(tag) {
     var tagReference = {},
         taginfo = iD.taginfo(),

@@ -1,3 +1,4 @@
+require('../operations.js')
 iD.operations.Disconnect = function(selectedIDs, context) {
     var vertices = _.filter(selectedIDs, function vertex(entityId) {
         return context.geometry(entityId) === 'vertex';

@@ -1,3 +1,7 @@
+require ('./entity.js');
+_=require ('underscore');
+
+
 iD.Way = iD.Entity.way = function iD_Way() {
     if (!(this instanceof iD_Way)) {
         return (new iD_Way()).initialize(arguments);

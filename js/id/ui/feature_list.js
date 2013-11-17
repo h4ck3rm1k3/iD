@@ -1,3 +1,4 @@
+require ('../ui.js');
 iD.ui.FeatureList = function(context) {
     var geocodeResults;
 

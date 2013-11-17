@@ -1,3 +1,4 @@
+require ('../id.js');
 iD.Entity = function(attrs) {
     // For prototypal inheritance.
     if (this instanceof iD.Entity) return;

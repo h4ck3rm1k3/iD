@@ -1,4 +1,6 @@
-require("./window.js");
+var window_module = require("./window.js");
+var window = window_module.window;
+var doc = window_module.window.document;
 
 (
     function(e){

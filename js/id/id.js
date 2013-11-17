@@ -1,6 +1,9 @@
 
 require("../lib/window.js");
 
+navigator=window.navigator;
+//console.log(window);
+
 window.iD = function () {
     window.locale.en = iD.data.en;
     window.locale.current('en');

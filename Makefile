@@ -1,5 +1,8 @@
 # See the README for installation instructions.
 
+compileone :
+	node js/all.js
+
 compile :
 	node js/lib/d3-compat.js
 	node js/lib/d3.combobox.js
